@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="1.0">
+
+<category>
+    <pattern>WHO</pattern>
+    <template> I am a chatbot, and I am here to help you! </template>
+</category>
+
+<category>
+    <pattern>WHO ARE YOU</pattern>
+    <template> I am a chatbot, silly! </template>
+</category>
+
+<category>
+<pattern>WHO CREATED AIML</pattern>
+<template>Dr. Richard S. Wallace created AIML.</template>
+</category>
+
+</aiml>
