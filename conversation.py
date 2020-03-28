@@ -10,9 +10,8 @@ def learn():
 
 learn()
 
-while True:
-    query = raw_input("User > ")
+def findResponse(query):
     response = k.respond(query)
     if response == "":
         response = "Sorry,I don't understand that!" 
-    print "Bot > " ,response
+    return response
