@@ -15,3 +15,9 @@ def findResponse(query):
     if response == "":
         response = "Sorry,I don't understand that!" 
     return response
+
+while True:
+    query = raw_input("User > ")
+    response = findResponse(query)
+    print(response)
+    

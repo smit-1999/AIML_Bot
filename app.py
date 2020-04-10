@@ -9,16 +9,18 @@ def index():
 
 @app.route("/users/<user>")
 def userGet(user):
-    
+    print('testing get req')    
     cnx = mysql.connector.connect(user='smit', password='smit@123',
                               host='127.0.0.1',
                               database='user_chats')
     mycursor = cnx.cursor()
     a=user
     val=(a,)
+
     mycursor.execute("SELECT * FROM chats WHERE userid=%s",val)
     myresult = mycursor.fetchall()
     chat_user=[]
+
     for x in myresult:
         dic = {}        
         str_time = x[1].encode('ascii','ignore')
@@ -51,7 +53,18 @@ def userQuery(user):
     insertIntoDb(str_userid,str_query,str_time,str_response)
     
     return jsonify({'response': str_response})
+@app.route('/test/response', methods = ['POST'])
+def testPost():
+    print('Post req fetched : ', request)
+    json = request.get_json()
+    print('json:',json)
+    return {'status' : json['query']}
 
+@app.route('/test/response')
+def test():
+    return {"abc":"def",
+    "asd" : "asdfg"
+    }
 
 def insertIntoDb(user,query,time1,response):
     cnx = mysql.connector.connect(user='smit', password='smit@123',
