@@ -3,6 +3,9 @@ from conversation import findResponse
 import mysql.connector
 app = Flask(__name__)
 
+#TODO increase size of sql table columns
+
+
 @app.route("/")
 def index():
     return {"This is index page": "s"}
@@ -46,13 +49,12 @@ def userQuery(user):
     str_time = json['time'].encode('ascii','ignore')
     str_response = findResponse(str_query)
     
-    if len(str_response) > 40:
-        str_response = str_response[:39]
-    
-
     insertIntoDb(str_userid,str_query,str_time,str_response)
     
     return jsonify({'response': str_response})
+
+
+
 @app.route('/test/response', methods = ['POST'])
 def testPost():
     print('Post req fetched : ', request)

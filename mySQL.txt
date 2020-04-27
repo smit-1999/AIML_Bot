@@ -13,3 +13,6 @@ SHOW TABLES;
 
 To view full table X :
 SELECT * from X;
+
+To describe a table X:
+describe X;
