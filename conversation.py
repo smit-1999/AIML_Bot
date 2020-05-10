@@ -28,9 +28,10 @@ def findResponse(query):
        response = "You can take one of these courses taught by your favourite prof:" + getCourses(response)
     elif response == "call top trending in url.py":
         jobs = topTrending()
-        response = "These are a few trending jobs,I found from Google."
+        response = "Google's pick:"
         for job in jobs:
             response+= job + ","
+       
         return response
     elif response == "":
         responseMsgs = ["Sorry,I don't understand that!","I searched through dozens of articles,but to no avail.Sorry!"
@@ -60,8 +61,8 @@ def getCourses(query):
 
     cnx.close();                     
     return dic['subjects']
-while True:
-    query = raw_input("User > ")
-    response = findResponse(query)
-    print(response)
-    
+# while True:
+#     query = raw_input("User > ")
+#     response = findResponse(query)
+#     print(response)
+   
