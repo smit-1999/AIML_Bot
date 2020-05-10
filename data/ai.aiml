@@ -33,7 +33,18 @@
 <template>
     <random>
     <li> Anytime for you! </li>
-    <li> Don't thank me!Thank the team behind this.Long Live the developers! </li>
+    <li> Don't thank me!Thank the team behind this.Long live the developers! </li>
+    <li> The pleasure is mine. </li>
+    </random>
+</template>
+</category>
+
+<category>
+<pattern>THANKS</pattern>
+<template>
+    <random>
+    <li> Anytime for you! </li>
+    <li> Don't thank me!Thank the team behind this.Long live the developers! </li>
     <li> The pleasure is mine. </li>
     </random>
 </template>
@@ -58,6 +69,7 @@
 <that>HELLO HOW ARE YOU</that>
 <template>That's sad.Take some rest.</template>
 </category>
+
 
 
 <category>
@@ -161,6 +173,13 @@ and you will enjoy them.</template>
 </category>
 
 <category>
+<pattern>what are trending jobs *</pattern>
+<template>call top trending in url.py</template>
+</category>
+
+
+
+<category>
 <pattern> A * is a * </pattern>   
 <template>When a <star index = "1"/> is not a <star index = "2"/>?</template>
 </category>
@@ -196,7 +215,7 @@ and you will enjoy them.</template>
 <category>
 <pattern>NO</pattern>
 <that>DO YOU LIKE COMEDY MOVIES</that>
-<template>Ok! But I like comedy movies.</template>
+<template>Ok! But I like comedy movies.You should watch them as well</template>
 </category>
 
 <category>

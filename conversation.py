@@ -3,7 +3,7 @@ import aiml,random,requests,decimal
 from autocorrect import spell
 import mysql.connector
 from flask import Flask, request, jsonify
-
+from url import topTrending
 
 k = aiml.Kernel();
 
@@ -15,7 +15,7 @@ learn()
 
 def findResponse(query):
     response = k.respond(query)
-    print('bot response' + response)
+    print('bot response:' + response)
     if response[:85] == "http://api.openweathermap.org/data/2.5/weather?appid=0c42f7f6b53b244c78a418f4f181282a":
         city = response[85:]
         api = response[:85] + "&q=" + city
@@ -26,6 +26,12 @@ def findResponse(query):
     elif response[:28] == "http://localhost:8000/profs/":
        print('User entered a prof name,now finding courses')
        response = "You can take one of these courses taught by your favourite prof:" + getCourses(response)
+    elif response == "call top trending in url.py":
+        jobs = topTrending()
+        response = "These are a few trending jobs,I found from Google."
+        for job in jobs:
+            response+= job + ","
+        return response
     elif response == "":
         responseMsgs = ["Sorry,I don't understand that!","I searched through dozens of articles,but to no avail.Sorry!"
                         "I am unable to answer this.Please inform the developers!"]
@@ -54,8 +60,8 @@ def getCourses(query):
 
     cnx.close();                     
     return dic['subjects']
-# while True:
-#     query = raw_input("User > ")
-#     response = findResponse(query)
-#     print(response)
+while True:
+    query = raw_input("User > ")
+    response = findResponse(query)
+    print(response)
     
