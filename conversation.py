@@ -25,7 +25,7 @@ def findResponse(query):
                  +json_data['weather'][0]['description'] + "\nTemperature:" + str((json_data['main']['temp'])-273) + "Celsius"
     elif response[:28] == "http://localhost:8000/profs/":
        print('User entered a prof name,now finding courses')
-       response = "You can take one of these courses taught by:" + getCourses(response)
+       response = "You can take one of these courses taught by your favourite prof:" + getCourses(response)
     elif response == "":
         responseMsgs = ["Sorry,I don't understand that!","I searched through dozens of articles,but to no avail.Sorry!"
                         "I am unable to answer this.Please inform the developers!"]
