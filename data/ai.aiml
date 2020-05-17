@@ -93,25 +93,31 @@
 
 <category>
 <pattern>Can you help * course * semester</pattern>
-<template>Sure,what domain are you interested in?</template>
+<template>Sure,what domain are you interested in?Finance,Data Science,Robotics?</template>
 </category>
 
 <category>
 <pattern>Finance</pattern>
-<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN</that>
-<template>A prosperous field.You should look into these courses:FoFa, Stock Market Valuation.These are the fundamentals
+<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN FINANCE DATA SCIENCE ROBOTICS</that>
+<template>A prosperous field.You should look into these courses:FoFa, POE, Stock Market Valuation.These are the fundamentals
 and you will enjoy them.</template>
 </category>
 
 <category>
 <pattern>Data Science</pattern>
-<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN</that>
+<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN FINANCE DATA SCIENCE ROBOTICS</that>
 <template>A trending field.You should look into these courses:Data mining by Aruna Madam and AI by Hota Sir.</template>
 </category>
 
 <category>
+<pattern>Robotics</pattern>
+<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN FINANCE DATA SCIENCE ROBOTICS</that>
+<template>A lot of good work is going on right now here.Check out Linear algebra by KVR Sir and Analog Electronics by Alivelu madam.</template>
+</category>
+
+<category>
 <pattern>None</pattern>
-<that> SURE WHAT DOMAIN ARE YOU INTERESTED IN</that>
+<that>SURE WHAT DOMAIN ARE YOU INTERESTED IN FINANCE DATA SCIENCE ROBOTICS</that>
 <template>Are you sure you are not interested in any domain?</template>
 </category>
 
@@ -132,6 +138,13 @@ and you will enjoy them.</template>
 <that> BUT YOU WANTED TO CHOOSE AN ELECTIVE THIS SEMESTER RIGHT</that>
 <template>Can you tell me the name of one of your favourite professors here?</template>
 </category>
+
+<category>
+<pattern>None</pattern>
+<that>CAN YOU TELL ME THE NAME OF ONE OF YOUR FAVOURITE PROFESSORS HERE</that>
+<template>No problem,seems like you are a fresher.AI,Effective Public Speaking and DSA are highly rated by your seniors.Check them out!</template>
+</category>
+
 
 <category>
 <pattern>Hota</pattern>

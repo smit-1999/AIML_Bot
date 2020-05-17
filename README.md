@@ -1,13 +1,17 @@
 
 # AIML Bot
-This is a part of the CS F407 Artificial intelligence Course.
+This is a part of the CS F407 Artificial intelligence Course at BITS Pilani Hyderabad Campus.
 
-## Installation
-The backend is in Python and frontend using Android.
-The app has been tested locally on Android emulator and not on an Android Phone.
+## Architecture
+The backend is in Python and frontend is created using Android.
+The app has been tested locally on Android emulator(in Android Studio) and not on an Android Phone.
 
+The database information is stored in MySQL database on a  local machine. For viewing and updating databases, *mySQL.txt* contains the appropriate code.
 
-The database information is stored in MySQL database on local machine. For viewing and updating databases, *mySQL.txt* contains the appropriate code.
+```markdown
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+```
+
 
 A database named *user_chats* should be created in the *mysql* system first.2 tables named *chats* and *faculty* are used for persistent storage.
 

@@ -16,6 +16,7 @@ def userGet(user):
     cnx = mysql.connector.connect(user='smit', password='smit@123',
                               host='127.0.0.1',
                               database='user_chats')
+    #a database cursor is a control structure that enables traversal over the records in a database
     mycursor = cnx.cursor()
     a=user
     val=(a,)
@@ -81,7 +82,7 @@ def insertIntoDb(user,query,time1,response):
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1',port=8000)
+    app.run(host='127.0.0.1',port=8000)    
     cnx = mysql.connector.connect(user='smit', password='smit@123',
                               host='127.0.0.1',
                               database='user_chats')
