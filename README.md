@@ -1,9 +1,11 @@
-# Table of Contents
-- [Summary](#summary)
-- [Architecture](#architecture)
-- [Setup](#setup)
-- [Authors](#authors)
-- [References](#references)
+- [Table of Contents](#table-of-contents)
+  * [Summary](#summary)
+  * [Architecture](#architecture)
+  * [Setup](#setup)
+  * [Authors](#authors)
+  * [References](#references)
+  * [Contribution](#contribution)
+
 ## Summary
 This is a part of the *CS F407 Artificial Intelligence* Course at BITS Pilani Hyderabad Campus. In this assignment, a messenger bot  is created which can provide intelligent dialog conversations with the user, similar to  [ELIZA](https://en.wikipedia.org/wiki/ELIZA) or [ALICE](https://www.chatbots.org/chatbot/a.l.i.c.e/).
 
@@ -17,13 +19,10 @@ The bot interacts with web services and helps the user decide the course to be t
 
 ## Architecture
 A corpus of professors and courses is stored in the MySQL database. Artificial Intelligence Markup Language (AIML) is used for creating the core of the chatbot. The frontend is developed using Android and backend using Python. 
-The backend is in Python and frontend is created using Android.
+The back end is in Python and front end is created using Android.
 The app has been tested locally on Android emulator(in Android Studio) and not on an Android Phone.
 
 The database information is stored in MySQL database on a  local machine. For viewing and updating databases, *mySQL.txt* contains the appropriate code.
-
-
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
 
 
 
@@ -32,7 +31,7 @@ A database named *user_chats* should be created in the *mysql* system first.2 ta
 The *chats* table stores the timestamp,userid, bot query and bot response in that order.
 The *faculty* table stores the name of the faculty along with the courses taught.
 
-## Installation
+## Setup
 
 Before starting ensure that you have *mysql* on your machine.
 - Create a database named *user_chats*
@@ -69,3 +68,6 @@ The front end Android part can be run in *Android Studio*.
  - [For Android front end
    ](https://medium.com/@harivigneshjayapalan/android-baking-a-simple-chatbot-in-30-minutes-aiml-ff43c3269025)
 
+## Contribution
+:+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
