@@ -1,9 +1,6 @@
-![Application demo](media/demo.gif)
-*Application demo*
-
 
 # Table of Contents
-
+  * [Demo](#demo)
   * [Summary](#summary)
   * [Architecture](#architecture)
   * [Setup](#setup)
@@ -11,16 +8,21 @@
   * [References](#references)
   * [Contribution](#contribution)
 
+## Demo
+![Application demo](media/demo.gif)
+
+
 ## Summary
 This is a part of the *CS F407 Artificial Intelligence* Course at BITS Pilani Hyderabad Campus. In this assignment, a messenger bot  is created which can provide intelligent dialog conversations with the user, similar to  [ELIZA](https://en.wikipedia.org/wiki/ELIZA) or [ALICE](https://www.chatbots.org/chatbot/a.l.i.c.e/).
 
-The messenger bot uses a knowledge base with multiple random responses exchanged between the user and the bot. The bot is able to give replies to multiple interactions and stores the conversations in a  database. These persistent copies of the interactions can be retrieved when the user wishes to resume his chat again. 
-
-The bot interacts with web services and helps the user decide the course to be taken based on the recent trends in the industry or the recent trending jobs. The interactions with the web services are created using *REST* services (using Flask). The bot  recommends a subject based on domain of interest or based on the professor in whose class he/she is interested in. 
-
-**No machine learning is used and the whole project is based on keyword matching and intent recognition.**
-
-
+### Features
+- AIML is used for the core of the chatbot.
+- The messenger bot uses a knowledge base with multiple random responses exchanged between the user and the bot. 
+- The bot is able to give replies to multiple interactions and stores the conversations in a  database. These persistent copies of the interactions can be retrieved the next time user chats with the  bot.
+- The bot interacts with web services and helps the user decide the course to be taken based on the recent trends in the industry or the recent trending jobs.
+-  The bot  recommends a subject based on domain of interest or based on the professor in whose class he/she is interested in. 
+- The bot can tell the current weather by interacting with a web API.
+- **No machine learning is used and the whole project is based on keyword matching and intent recognition.**
 
 
 
