@@ -31,7 +31,7 @@ The app has been tested locally on Android emulator(in Android Studio) and not o
 
 The database information is stored in MySQL database on a  local machine. For viewing and updating databases, *mySQL.txt* contains the appropriate code.
 
-
+![Database tables](media/tables.png)
 
 A database named *user_chats* should be created in the *mysql* system first.2 tables named *chats* and *faculty* are used for persistent storage.
 
