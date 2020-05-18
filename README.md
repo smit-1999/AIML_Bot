@@ -17,6 +17,8 @@ The bot interacts with web services and helps the user decide the course to be t
 
 **No machine learning is used and the whole project is based on keyword matching and intent recognition.**
 
+![Application demo](media/demo.gif)
+
 
 
 ## Architecture
