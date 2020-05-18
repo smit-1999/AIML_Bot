@@ -1,3 +1,6 @@
+![Application demo](media/demo.gif)
+*Application demo*
+
 
 # Table of Contents
 
@@ -17,7 +20,7 @@ The bot interacts with web services and helps the user decide the course to be t
 
 **No machine learning is used and the whole project is based on keyword matching and intent recognition.**
 
-![Application demo](media/demo.gif)
+
 
 
 
@@ -33,6 +36,8 @@ The database information is stored in MySQL database on a  local machine. For vi
 A database named *user_chats* should be created in the *mysql* system first.2 tables named *chats* and *faculty* are used for persistent storage.
 
 The *chats* table stores the timestamp,userid, bot query and bot response in that order.
+![Database format](media/database.png)
+
 The *faculty* table stores the name of the faculty along with the courses taught.
 
 ## Setup
