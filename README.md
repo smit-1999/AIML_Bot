@@ -1,4 +1,6 @@
-- [Table of Contents](#table-of-contents)
+
+# Table of Contents
+
   * [Summary](#summary)
   * [Architecture](#architecture)
   * [Setup](#setup)
@@ -69,5 +71,4 @@ The front end Android part can be run in *Android Studio*.
    ](https://medium.com/@harivigneshjayapalan/android-baking-a-simple-chatbot-in-30-minutes-aiml-ff43c3269025)
 
 ## Contribution
-:+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 [Contribution guidelines for this project](docs/CONTRIBUTING.md)
